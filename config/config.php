@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Configurações do sistema
 define('SITE_NAME', 'CineTrack');
-define('SITE_URL', 'http://localhost/cinetrack');
+define('SITE_URL', 'http://localhost/Projeto-Final');
 define('BASE_PATH', __DIR__ . '/..');
 
 // Configurações de timezone

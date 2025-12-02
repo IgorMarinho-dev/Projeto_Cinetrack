@@ -154,7 +154,7 @@ include 'includes/header.php';
                                         <input type="password" 
                                                class="form-control form-control-lg" 
                                                id="registerPasswordConfirm" 
-                                               name="senha_confirma" 
+                                               name="confirmar_senha" 
                                                required
                                                minlength="6"
                                                placeholder="Confirme sua senha">
