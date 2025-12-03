@@ -97,4 +97,44 @@ include __DIR__ . '/../includes/header.php';
 
         <div class="col-md-5">
             <label class="form-label">Gênero</label>
-            <input type="text
+            <input type="text" name="genero" class="form-control"
+                   value="<?php echo htmlspecialchars($filme['genero']); ?>">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Diretor</label>
+            <input type="text" name="diretor" class="form-control"
+                   value="<?php echo htmlspecialchars($filme['diretor']); ?>">
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Duração (minutos)</label>
+            <input type="number" name="duracao" class="form-control"
+                   value="<?php echo htmlspecialchars($filme['duracao']); ?>">
+        </div>
+
+        <div class="col-md-8">
+            <label class="form-label">URL do Poster</label>
+            <input type="text" name="poster_url" class="form-control"
+                   value="<?php echo htmlspecialchars($filme['poster_url']); ?>">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Sinopse</label>
+            <textarea name="sinopse" rows="4" class="form-control"><?php
+                echo htmlspecialchars($filme['sinopse']);
+            ?></textarea>
+        </div>
+
+        <div class="col-12 d-flex gap-2 justify-content-end">
+            <a href="filmes.php" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Voltar
+            </a>
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-save"></i> Salvar alterações
+            </button>
+        </div>
+    </form>
+</div>
+
+<?php include __DIR__ . '/../includes/footer.php'; ?>
